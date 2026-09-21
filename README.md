@@ -1,4 +1,3 @@
-
 <div align="center">
 
 # ✂️ RODRIGO SILVA
@@ -48,8 +47,6 @@ Posicionamento → Identidade visual → Estrutura → Prova social → Contato
 ```
 
 A **estrutura** virou uma SPA leve de 3 páginas — Início, História e Eventos — navegando por hash, sem recarregar a página, sem framework, sem backend. Só HTML, CSS e JS puro, no melhor estilo "menos é mais".
-
-No meio do caminho, apareceu um vilão recorrente: um bug de CSS que fazia fotos de fundo sumirem atrás de outros elementos — resolvido descobrindo que faltava `isolation: isolate` no elemento pai. Apareceu duas vezes antes de virar regra fixa do projeto.
 
 Depois de pronto, o site foi publicado no **GitHub Pages**, e para dar um passo além do `.github.io`, registramos um **domínio próprio**: `rodrigosilvavisagismo.com.br`. A configuração de DNS teve seus obstáculos — uma transição que exigiu espera, um registro que ficou vazio por engano — mas terminou com sucesso: 4 registros A, um CNAME, e HTTPS ativo.
 
@@ -114,19 +111,6 @@ Sem framework · Sem backend · Sem banco de dados
 | Publicação | GitHub Pages, branch `main`, pasta raiz |
 | Domínio | `rodrigosilvavisagismo.com.br` (registro.br) |
 | SSL | ✅ HTTPS ativo |
-
----
-
-## ⚠️ Nota técnica
-
-> Todo container com imagem de fundo em `z-index` negativo **precisa** de `isolation: isolate` no elemento pai — caso contrário, a imagem escapa do card e some atrás de outros elementos.
-
----
-
-## 🕰️ Pendências conscientes
-
-- [ ] Conteúdo da página **Eventos** — só quando houver algo real para anunciar
-- [ ] Crédito de desenvolvimento no rodapé — volta quando o novo site estiver pronto
 
 ---
 
